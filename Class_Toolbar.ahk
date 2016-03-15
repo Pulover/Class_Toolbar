@@ -3,7 +3,6 @@
 ;                    Class Toolbar
 ;
 ; Author:            Pulover [Rodolfo U. Batista]
-;                    rodolfoub@gmail.com
 ; AHK version:       1.1.23.01
 ;
 ;                    Class for AutoHotkey Toolbar custom controls
