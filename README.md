@@ -2,64 +2,62 @@
 
 ## Class for AutoHotkey Toolbar custom controls
 
-Author: Pulover [Rodolfo U. Batista] rodolfoub@gmail.com
 AHK version: 1.1.23.01
-Release date: 2 March 2016
 
 This class provides intuitive methods to work with Toolbar controls created via Gui, Add, Custom, ClassToolbarWindow32.
 
 Note: It's recommended to call any method only after Gui, Show. Adding or modifying buttons of a toolbar in a Gui that is not yet visible might fail eventually.
 
 ## Toolbar Methods:
-Add([Options, Label1[=Text]:Icon[(Options)], Label2[=Text]:Icon[(Options)]...])
-AutoSize()
-Customize()
-Delete(Button)
-Export()
-Get([HotItem, TextRows, Rows, BtnWidth, BtnHeight, Style, ExStyle])
-GetButton(Button [, ID, Text, State, Style, Icon, Label, Index])
-GetButtonPos(Button [, OutX, OutY, OutW, OutH])
-GetButtonState(Button, StateQuerry)
-GetCount()
-GetHiddenButtons()
-Insert(Position [, Options, Label1[=Text]:Icon[(Options)], Label2[=Text]:Icon[(Options)]...])
-LabelToIndex(Label)
-ModifyButton(Button, State [, Set])
-ModifyButtonInfo(Button, Property, Value)
-MoveButton(Button, Target)
-OnMessage(CommandID)
-OnNotify(Param [, MenuXPos, MenuYPos, Label, ID, AllowCustom])
-Reset()
-SetButtonSize(W, H)
-SetDefault([Options, Label1[=Text]:Icon[(Options)], Label2[=Text]:Icon[(Options)]...])
-SetExStyle(Style)
-SetHotItem(Button)
-SetImageList(IL_Default [, IL_Hot, IL_Pressed, IL_Disabled])
-SetIndent(Value)
-SetListGap(Value)
-SetMaxTextRows([MaxRows])
-SetPadding(X, Y)
-SetRows([Rows, AddMore])
-ToggleStyle(Style)
+* Add([Options, Label1[=Text]:Icon[(Options)], Label2[=Text]:Icon[(Options)]...])
+* AutoSize()
+* Customize()
+* Delete(Button)
+* Export()
+* Get([HotItem, TextRows, Rows, BtnWidth, BtnHeight, Style, ExStyle])
+* GetButton(Button [, ID, Text, State, Style, Icon, Label, Index])
+* GetButtonPos(Button [, OutX, OutY, OutW, OutH])
+* GetButtonState(Button, StateQuerry)
+* GetCount()
+* GetHiddenButtons()
+* Insert(Position [, Options, Label1[=Text]:Icon[(Options)], Label2[=Text]:Icon[(Options)]...])
+* LabelToIndex(Label)
+* ModifyButton(Button, State [, Set])
+* ModifyButtonInfo(Button, Property, Value)
+* MoveButton(Button, Target)
+* OnMessage(CommandID)
+* OnNotify(Param [, MenuXPos, MenuYPos, Label, ID, AllowCustom])
+* Reset()
+* SetButtonSize(W, H)
+* SetDefault([Options, Label1[=Text]:Icon[(Options)], Label2[=Text]:Icon[(Options)]...])
+* SetExStyle(Style)
+* SetHotItem(Button)
+* SetImageList(IL_Default [, IL_Hot, IL_Pressed, IL_Disabled])
+* SetIndent(Value)
+* SetListGap(Value)
+* SetMaxTextRows([MaxRows])
+* SetPadding(X, Y)
+* SetRows([Rows, AddMore])
+* ToggleStyle(Style)
 
 ## Presets Methods:
-Presets.Delete(Slot)
-Presets.Export(Slot, [ArrayOut])
-Presets.Import(Slot, [Options, Label1[=Text]:Icon, Label2[=Text]:Icon, Label3[=Text]:Icon...])
-Presets.Load(Slot)
-Presets.Save(Slot, Buttons)
+* Presets.Delete(Slot)
+* Presets.Export(Slot, [ArrayOut])
+* Presets.Import(Slot, [Options, Label1[=Text]:Icon, Label2[=Text]:Icon, Label3[=Text]:Icon...])
+* Presets.Load(Slot)
+* Presets.Save(Slot, Buttons)
 
 ## Useful Toolbar Styles:
 Styles can be applied to Gui command options, e.g.: Gui, Add, Custom, ClassToolbarWindow32 0x0800 0x0100
 
-TBSTYLE_FLAT      := 0x0800 - Shows separators as bars.
-TBSTYLE_LIST      := 0x1000 - Shows buttons text on their side.
-TBSTYLE_TOOLTIPS  := 0x0100 - Shows buttons text as tooltips.
-CCS_ADJUSTABLE    := 0x0020 - Allows customization by double-click and shift-drag.
-CCS_NODIVIDER     := 0x0040 - Removes the separator line above the toolbar.
-CCS_NOPARENTALIGN := 0x0008 - Allows positioning and moving toolbars.
-CCS_NORESIZE      := 0x0004 - Allows resizing toolbars.
-CCS_VERT          := 0x0080 - Creates a vertical toolbar (add WRAP to button options).
+* TBSTYLE_FLAT      := 0x0800 - Shows separators as bars.
+* TBSTYLE_LIST      := 0x1000 - Shows buttons text on their side.
+* TBSTYLE_TOOLTIPS  := 0x0100 - Shows buttons text as tooltips.
+* CCS_ADJUSTABLE    := 0x0020 - Allows customization by double-click and shift-drag.
+* CCS_NODIVIDER     := 0x0040 - Removes the separator line above the toolbar.
+* CCS_NOPARENTALIGN := 0x0008 - Allows positioning and moving toolbars.
+* CCS_NORESIZE      := 0x0004 - Allows resizing toolbars.
+* CCS_VERT          := 0x0080 - Creates a vertical toolbar (add WRAP to button options).
 
 - - -
 
