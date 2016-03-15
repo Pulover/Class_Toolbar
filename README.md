@@ -4,7 +4,7 @@
 
 AHK version: 1.1.23.01
 
-This class provides intuitive methods to work with Toolbar controls created via Gui, Add, Custom, ClassToolbarWindow32.
+This class provides intuitive methods to work with Toolbar controls created via **Gui, Add, Custom, ClassToolbarWindow32**.
 
 Note: It's recommended to call any method only after Gui, Show. Adding or modifying buttons of a toolbar in a Gui that is not yet visible might fail eventually.
 
