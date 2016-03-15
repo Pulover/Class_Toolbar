@@ -1,4 +1,4 @@
-﻿# Class Toolbar #
+﻿# Class Toolbar
 
 ## Class for AutoHotkey Toolbar custom controls
 
