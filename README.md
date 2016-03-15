@@ -64,12 +64,12 @@ Styles can be applied to Gui command options, e.g.: Gui, Add, Custom, ClassToolb
 ## Add()
 Add button(s) to the end the toolbar. The Buttons parameters sets target Label, text caption and icon index for each button. If not a valid label name, a function name can be used instead (parameters can be passed to the OnMessage method). To add a separator call this method without parameters. Prepend any non letter or digit symbol, such as "-" or "*" to the label to add a hidden button. Hidden buttons won't be visible when Gui is shown but will still be available in the customize window. E.g.: "-Label=New:1", "*Label:2".
 
+### Return
+TRUE if successful, FALSE if there was a problem.
+
 ### Parameters:
 * *Options* - Enter zero or more words, separated by space or tab, from the following list to set buttons' initial states and styles: Checked, Ellipses, Enabled, Hidden, Indeterminate, Marked, Pressed, Wrap, Button, Sep, Check, Group, CheckGroup, Dropdown, AutoSize, NoPrefix, ShowText, WholeDropdown. You can also set the minimum and maximum button width, for example W20-100 would set min to 20 and max to 100. This option affects all buttons in the toolbar when added or inserted but does not prevent modifying button sizes. If this parameter is blank it defaults to "Enabled", otherwise you must set this parameter to enable buttons. You may pass integer values that correspond to (a combination of) button styles. You cannot set states this way (it will always be set to "Enabled").
 * *Buttons* - Buttons can be added in the following format: Label=Text:1, where "Label" is the target label to execute when the button is pressed, "Text" is caption to be displayed with the button or as a Tooltip if the toolbar has the TBSTYLE_TOOLTIPS style (this parameter can be omitted) and"1" can be any numeric value that represents the icon index in the ImageList (0 means no icon). You can include specific states and styles for a button appending them inside parenthesis after the icon. E.g.: "Label=Text:3(Enabled Dropdown)". This option can also be an Integer value, in this case the general options are ignored for that button. To add a separator between buttons specify "" or equivalent.
-
-### Return
-TRUE if successful, FALSE if there was a problem.
 
 ## AutoSize()
 Auto-sizes toolbar.
