@@ -92,7 +92,7 @@ TRUE if successful, FALSE if there was a problem.
 ### Parameters
 * *Button* - 1-based index of the button. If omitted deletes all buttons.
 
-## Export()()
+## Export()
 Returns a text string with current buttons and order in Add and Insert methods compatible format (this includes button's styles but not states). Duplicate labels are ignored.
 
 ### Return
