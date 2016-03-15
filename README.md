@@ -62,7 +62,7 @@ Styles can be applied to Gui command options, e.g.: Gui, Add, Custom, ClassToolb
 - - -
 
 ## Add()
-Add button(s) to the end the toolbar. The Buttons parameters sets target Label, text caption and icon index for each button. If not a valid label name, a function name can be used instead (parameters can be passed to the OnMessage method). To add a separator call this method without parameters. Prepend any non letter or digit symbol, such as "-" or "*" to the label to add a hidden button. Hidden buttons won't be visible when Gui is shown but will still be available in the customize window. E.g.: "-Label=New:1", "*Label:2".
+Add button(s) to the end the toolbar. The Buttons parameters sets target Label, text caption and icon index for each button. If not a valid label name, a function name can be used instead (parameters can be passed to the OnMessage method). To add a separator call this method without parameters. Prepend any non letter or digit symbol, such as "-" or "**" to the label to add a hidden button. Hidden buttons won't be visible when Gui is shown but will still be available in the customize window. E.g.: "-Label=New:1", "*Label:2".
 
 ### Return
 TRUE if successful, FALSE if there was a problem.
