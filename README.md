@@ -153,7 +153,7 @@ Retrieves the state of a button based on a querry.
 The TRUE if the StateQuerry is true, FALSE if it's not.
 
 ### Parameters
-* **StateQuerry:    Enter one of the following words to get the state of the button** - Checked, Enabled, Hidden, Highlighted, Indeterminate, Pressed.
+* **StateQuerry** - Enter one of the following words to get the state of the button** - Checked, Enabled, Hidden, Highlighted, Indeterminate, Pressed.
 
 ## GetCount()
 Retrieves the total number of buttons.
@@ -195,7 +195,7 @@ TRUE if successful, FALSE if there was a problem.
 
 ### Parameters
 * **Button** - 1-based index of the button.
-* **State:          Enter one word from the follwing list to change a button's state** - Check, Enable, Hide, Mark, Press.
+* **State** - Enter one word from the follwing list to change a button's state** - Check, Enable, Hide, Mark, Press.
 * **Set** - Enter TRUE or FALSE to set the state on/off.
 
 ## ModifyButtonInfo()
@@ -206,7 +206,7 @@ TRUE if successful, FALSE if there was a problem.
 
 ### Parameters
 * **Button** - 1-based index of the button.
-* **Property:       Enter one word from the following list to select the Property to be set** - Command, Image, Size, State, Style, Text, Label.
+* **Property** - Enter one word from the following list to select the Property to be set** - Command, Image, Size, State, Style, Text, Label.
 * **Value** - The value to be set in the selected Property. If Property is State or Style you can enter named values as in the Add options.
 
 ## MoveButton()
