@@ -2,7 +2,7 @@
 #SingleInstance, Force
 SetBatchLines, -1
 Process, Priority,, High
-#Include <Class_Toolbar>
+#Include ..\Class_Toolbar.ahk
 
 ; Icons from Win7 (change them for other OS's).
 ; Create 2 Default ImageLists for the first Toolbar (small and large).
